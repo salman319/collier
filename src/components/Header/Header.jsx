@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-white shadow-lg py-2">
+    <header className="sticky top-0 bg-white shadow-lg py-2 z-10">
       <nav className="flex justify-between w-[95%] md:w-[90%] mx-auto">
         <div className="flex items-center">
           <img src={logo} alt="logo" className="w-16" />

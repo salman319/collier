@@ -4,6 +4,7 @@
 @theme {
   --color-mint-500: #1da1f2;
   --color-blue-550: #06588b;
+  --color-icon: #def3ff;
   --color-dim: #f0eeef;
 }
 
@@ -21,6 +22,10 @@
   margin: 0 auto;
 }
 
+.shadow-custom {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 .hero-section {
   background-image: url('assets/images/hero.webp');
   background-position: center;
@@ -28,6 +33,34 @@
   background-blend-mode: color;
   background-color: #0000007a;
   height: calc(100vh - 80px);
+}
+
+.executive-section {
+  background-image: url('assets/images/executive.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  background-color: #000000a5;
+}
+
+.swiper-pagination {
+  bottom: -4px !important;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
 }
 
 @media (max-width: 768px) {
