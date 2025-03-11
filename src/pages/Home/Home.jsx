@@ -7,6 +7,7 @@ import ai from "../../assets/images/ai.jpg"
 import Header from "../../components/Header/Header";
 import TestimonialSection from "../../components/Testimonial/Testimonial"
 import ContinuousSlider from "../../components/ContinuousSlider/ContinuousSlider"
+import Footer from "../../components/Footer/Footer"
 
 function Home() {
 
@@ -136,9 +137,10 @@ function Home() {
 
               </p>
             </div>
-            <ContinuousSlider />
           </div>
+          <ContinuousSlider />
         </section>
+        <Footer />
       </main>
 
     </>
