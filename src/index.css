@@ -35,6 +35,12 @@
   height: calc(100vh - 80px);
 }
 
+.services-section {
+  background-image: url('assets/images/services.jpg');
+  background-blend-mode: color;
+  background-color: #000000a5;
+}
+
 .executive-section {
   background-image: url('assets/images/executive.webp');
   background-position: center;
