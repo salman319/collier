@@ -41,6 +41,11 @@
   background-color: #000000a5;
 }
 
+.staffing-section {
+  background-image: url('assets/images/staffingbg.jpg');
+  background-blend-mode: color;
+}
+
 .executive-section {
   background-image: url('assets/images/executive.webp');
   background-position: center;
