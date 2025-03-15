@@ -46,6 +46,23 @@
   background-blend-mode: color;
 }
 
+.contact-section {
+  background-image: url('assets/images/contact.webp');
+  background-blend-mode: color;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: .6;
+  background: #4f86f9;
+}
+
 .executive-section {
   background-image: url('assets/images/executive.webp');
   background-position: center;
