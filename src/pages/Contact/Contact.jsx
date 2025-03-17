@@ -1,7 +1,10 @@
 import start from "../../assets/images/start.jpg"
+import a1 from "../../assets/images/a1.png"
+import a2 from "../../assets/images/a2.png"
+import a3 from "../../assets/images/a3.png"
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer"
-import { AddressIcon, PhoneIcon } from "../../assets"
+import { AddressIcon, LocationIcon, PhoneIcon } from "../../assets"
 
 function Contact() {
 
@@ -23,31 +26,66 @@ function Contact() {
 
         <section className="mt-11 md:mt-20">
           <div className="wrapper">
-            <div className="w-full md:w-1/2 mx-auto">
+            <div>
               <p className="text-base text-center text-gray-500">We have operations across the world, with offices in the United States, UK, and Canada.</p>
             </div>
-            <div className="flex justify-center flex-col md:flex-row w-full md:w-3/4 mx-auto gap-5 mt-7">
-              <div className="w-full md:w-1/2 mx-auto flex gap-2 items-center flex-col border-b-2 md:border-b-0 md:border-r-2 border-mint-500">
-                <PhoneIcon />
-                <p className="text-black text-base font-semibold">Phone:</p>
-                <p className="text-gray-600 text-base mb-6 md:mb-0">+1 (469) 746 1037</p>
-              </div>
-
-              <div className="w-full md:w-1/2 flex gap-2 items-center flex-col">
+            <div className="mx-auto w-full md:w-1/2 flex gap-2 items-center flex-col mt-4">
+              <PhoneIcon />
+              <p className="text-black text-base font-semibold">Phone</p>
+              <p className="text-gray-600 text-base mb-6 md:mb-0">+1 (469) 746 1037</p>
+            </div>
+            <hr className="border-mint-500 border-2 my-5" />
+            <div className="">
+              <div className="flex justify-center flex-col items-center">
                 <AddressIcon />
-                <p className="text-black text-base font-semibold">Address:</p>
-                <div className="text-center">
-                  <p className="text-gray-600 text-base">8117 Preston Road, Suite 300, Dallas, TX 75225.</p>
-                  <p className="text-gray-600 text-base">11726 San Vicente Boulevard, Suite 550, Los Angeles, CA 90049.</p>
-                  <p className="text-gray-600 text-base">801 Brickell Avenue, Suite 900, Miami, FL 33131.</p>
-
+                <p className="text-black text-base font-semibold">Address</p>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-4">
+                <div className="shadow-custom rounded-2xl p-4">
+                  <div className="flex items-center gap-2">
+                    <div className="rounded-full flex items-center justify-center p-1 border border-mint-500">
+                      <LocationIcon />
+                    </div>
+                    <div className="text-black font-semibold text-base">Global Headquarters</div>
+                  </div>
+                  <div className="grid grid-cols-2 mt-3 gap-5">
+                    <p className="text-gray-600 text-base">8117 Preston Road, Suite 300, Dallas, TX 75225.</p>
+                    <img src={a1} className="w-full aspect-video rounded-2xl" alt="Media" />
+                  </div>
                 </div>
+
+                <div className="shadow-custom rounded-2xl p-4">
+                  <div className="flex items-center gap-2">
+                    <div className="rounded-full flex items-center justify-center p-1 border border-mint-500">
+                      <LocationIcon />
+                    </div>
+                    <div className="text-black font-semibold text-base">West Coast US Office</div>
+                  </div>
+                  <div className="grid grid-cols-2 mt-3 gap-5">
+                    <p className="text-gray-600 text-base">11726 San Vicente Boulevard, Suite 550, Los Angeles, CA 90049.</p>
+                    <img src={a2} className="w-full aspect-video rounded-2xl" alt="Media" />
+                  </div>
+                </div>
+
+                <div className="shadow-custom rounded-2xl p-4">
+                  <div className="flex items-center gap-2">
+                    <div className="rounded-full flex items-center justify-center p-1 border border-mint-500">
+                      <LocationIcon />
+                    </div>
+                    <div className="text-black font-semibold text-base">East Coast US Office</div>
+                  </div>
+                  <div className="grid grid-cols-2 mt-3 gap-5">
+                    <p className="text-gray-600 text-base">801 Brickell Avenue, Suite 900, Miami, FL 33131.</p>
+                    <img src={a3} className="w-full aspect-video rounded-2xl" alt="Media" />
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </section>
 
-        <section className="mt-11 md:mt-20">
+        <section className="my-11 md:my-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="grid-item px-8">
               <div className="text-center mb-3">
@@ -79,8 +117,7 @@ function Contact() {
           </div>
         </section>
 
-        <section className="mt-11 md:mt-20 contact-section relative bg-[#000000a5] bg-cover bg-no-repeat bg-top flex items-center py-11 md:py-20">
-          {/* <div className="overlay"></div> */}
+        {/* <section className="mt-11 md:mt-20 contact-section relative bg-[#000000a5] bg-cover bg-no-repeat bg-top flex items-center py-11 md:py-20">
           <div className="wrapper">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="relative z-10">
@@ -168,7 +205,7 @@ function Contact() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Footer />
       </main>

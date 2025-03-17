@@ -32,3 +32,31 @@ export const AddressIcon = () => {
     </svg>
   );
 };
+export const LocationIcon = () => {
+  return (
+    <svg viewBox="0 0 64 64" className="w-5">
+      <g id="Flat">
+        <g id="Color">
+          <ellipse cx={32} cy="53.5" fill="#fccd1d" rx={29} ry="7.5" />
+          <ellipse cx={32} cy="53.5" fill="#f9a215" rx={20} ry="3.5" />
+          <path
+            d="M54,25A22,22,0,1,0,22.86,45l7.82,7.84a2,2,0,0,0,2.64,0L41.14,45A22,22,0,0,0,54,25Z"
+            fill="#dd051d"
+          />
+          <circle cx={32} cy={25} fill="#fff" r={18} />
+          <polygon
+            fill="#001f78"
+            points="25.5 19.25 19.5 23.75 25.5 35 31.5 23.75 25.5 19.25"
+          />
+          <circle cx="25.5" cy="18.5" fill="#16388b" r="3.5" />
+          <path
+            d="M38.5,29a1,1,0,0,0-1,1v5a1,1,0,0,0,2,0V30A1,1,0,0,0,38.5,29Z"
+            fill="#930110"
+          />
+          <polygon fill="#930110" points="38.5 19 32 31 45 31 38.5 19" />
+          <circle cx="38.5" cy="18.5" fill="#dd051d" r="3.5" />
+        </g>
+      </g>
+    </svg>
+  );
+};
